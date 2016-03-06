@@ -1,0 +1,36 @@
+{
+  "name": "elm-webpack-skeleton",
+  "version": "0.0.1",
+  "description": "A skeleton project for using elm with webpack.",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "rimraf dist && webpack",
+    "watch": "webpack --watch",
+    "dev": "webpack-dev-server --port 3000",
+    "test": "webpack-dev-server --config webpack.test.config.js --port 3001 --inline"
+  },
+  "keywords": [
+    "elm",
+    "skeleton",
+    "webpack",
+    "elm-test",
+    "elm-webpack-loader",
+    "elm-hot-loader"
+  ],
+  "author": "greyepoxy",
+  "devDependencies": {
+    "basscss": "^8.0.1",
+    "css-loader": "^0.23.1",
+    "elm-hot-loader": "^0.1.4",
+    "elm-webpack-loader": "^2.0.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "html-webpack-plugin": "^2.9.0",
+    "rimraf": "^2.5.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1",
+    "webpack-merge": "^0.8.3"
+  }
+}
