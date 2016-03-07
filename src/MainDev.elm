@@ -1,4 +1,4 @@
-module Main (..) where
+module MainDev (..) where
 
 import Html exposing (..)
 import Effects exposing (Effects, Never)

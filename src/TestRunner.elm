@@ -1,4 +1,4 @@
-module Main where
+module TestRunner where
 
 import App.Components.FakeTests exposing (tests)
 

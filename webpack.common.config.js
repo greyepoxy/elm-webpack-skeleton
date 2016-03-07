@@ -23,7 +23,6 @@ module.exports = {
   indexFileConfig: {
     output: {
       path: path.resolve(__dirname + '/dist'),
-      filename: '[hash].js',
     },
     
     module: {
@@ -54,6 +53,9 @@ module.exports = {
         './src/index.js'
       ]
     },
+    output: {
+      filename: '[hash].js'
+    },
   },
   
   indexDevEntryConfig: {
@@ -61,6 +63,9 @@ module.exports = {
       app: [
         './src/indexDev.js'
       ]
+    },
+    output: {
+      filename: '[name].js'
     },
   },
   
@@ -73,7 +78,7 @@ module.exports = {
 
     output: {
       path: path.resolve(__dirname + '/dist/tests'),
-      filename: 'tests.[hash].js',
+      filename: 'tests.js',
     },
   },
   

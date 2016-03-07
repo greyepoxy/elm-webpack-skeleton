@@ -4,10 +4,10 @@ import Html exposing (..)
 import Effects exposing (Effects, Never)
 import Task exposing (Task)
 import StartApp
-import Actions exposing (..)
-import Model exposing (..)
-import Update exposing (..)
-import View exposing (..)
+import App.Actions exposing (..)
+import App.Model exposing (..)
+import App.Update exposing (..)
+import App.View exposing (..)
 
 
 init : ( AppModel, Effects Action )
