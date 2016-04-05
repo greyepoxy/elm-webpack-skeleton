@@ -4,9 +4,9 @@
   "description": "A skeleton project for using elm with webpack.",
   "main": "src/index.js",
   "scripts": {
-    "build": "rimraf dist && webpack",
-    "watch": "webpack --watch",
-    "dev": "webpack-dev-server --port 3000 --hot --inline",
+    "build": "rimraf dist && webpack --config webpack.prod.config.js",
+    "watch": "webpack --config webpack.prod.config.js --watch",
+    "dev": "webpack-dev-server --config webpack.dev.config.js --port 3000 --hot --inline",
     "test": "webpack-dev-server --config webpack.test.config.js --port 3001 --inline"
   },
   "keywords": [
