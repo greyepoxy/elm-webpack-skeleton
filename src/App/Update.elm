@@ -1,10 +1,10 @@
-module App.Update (..) where
+module App.Update exposing (..)
 
 import App.Model exposing (..)
-import App.Actions exposing (..)
-import Effects exposing (Effects)
+import App.Messages exposing (..)
+import Platform.Cmd exposing (Cmd)
 
 
-update : Action -> AppModel -> ( AppModel, Effects Action )
+update : Message -> AppModel -> ( AppModel, Cmd Message )
 update action model =
-  ( model, Effects.none )
+  ( model, Cmd.none )

@@ -1,4 +1,4 @@
-module App.Model (..) where
+module App.Model exposing (..)
 
 
 type alias AppModel =

@@ -1,12 +1,12 @@
-module App.View (..) where
+module App.View exposing (..)
 
 import Html exposing (..)
-import App.Actions exposing (..)
+import App.Messages exposing (..)
 import App.Model exposing (..)
 
 
-view : Signal.Address Action -> AppModel -> Html
-view address model =
+view : AppModel -> Html Message
+view model =
   div
     []
     [ text "Hello" ]

@@ -4,10 +4,10 @@ var indexFileConfig = require('./webpack.common.config.js').indexFileConfig;
 var elmConfig = require('./webpack.common.config.js').elmConfig;
 var indexEntryConfig = require('./webpack.common.config.js').indexEntryConfig;
 	
-module.exports = merge(indexEntryConfig, indexFileConfig, commonConfig, elmConfig, {
+module.exports = merge(indexFileConfig, commonConfig, elmConfig, {
   
   //TODO: perform optimizations!
-  plugins: [
+  //plugins: [
     // new webpack.optimize.OccurenceOrderPlugin(),
 
     // minify & mangle JS/CSS
@@ -16,6 +16,6 @@ module.exports = merge(indexEntryConfig, indexFileConfig, commonConfig, elmConfi
     //     compressor: { warnings: false }
     //     // mangle:  true
     // })
-  ]
+  //]
 
 });

@@ -1,9 +1,8 @@
-module TestRunner where
+module TestRunner exposing (main)
 
 import App.Components.FakeTests exposing (tests)
 
 import ElmTest exposing (..)
-import Graphics.Element exposing (Element)
 
 allTests : Test
 allTests =
@@ -11,6 +10,6 @@ allTests =
     [ tests
     ]
 
-main : Element
+main : Program Never
 main =
-  elementRunner allTests
+  runSuiteHtml allTests

@@ -21,7 +21,13 @@ module.exports = {
   },
   
   indexFileConfig: {
+    entry: {
+      app: [
+        './src/index.js'
+      ]
+    },
     output: {
+      filename: '[name].[hash].js',
       path: path.resolve(__dirname + '/dist'),
     },
     
@@ -44,28 +50,6 @@ module.exports = {
           loader: 'url-loader?limit=10000![name].[ext]?[hash]'
         }
       ],
-    },
-  },
-  
-  indexEntryConfig: {
-    entry: {
-      app: [
-        './src/index.js'
-      ]
-    },
-    output: {
-      filename: '[hash].js'
-    },
-  },
-  
-  indexDevEntryConfig: {
-    entry: {
-      app: [
-        './src/indexDev.js'
-      ]
-    },
-    output: {
-      filename: '[name].js'
     },
   },
   
